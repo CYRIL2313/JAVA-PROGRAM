@@ -43,4 +43,18 @@ public class CreateDB {
  }
  }
 }
+			}
+public static void main(String[] args) {
+	connction con = null;
+	statement statement = null;
+	try {
+		class.forName(JDBC_DRIVER);
+		
+		System.out.println("connecting to database...");
+		con = DriverManager.getConnection(DB_URL,USER,PWD);
+		System.out.println("creating database...");
+		statement = con.createstatement();
+		string sql = "create database"
+	}
+
 
